@@ -23,7 +23,8 @@ module.exports = {
     "@typescript-eslint",
   ],
   "rules": {
-    "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx",  ".js", ".jsx"] }]
+    "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx",  ".js", ".jsx"] }],
+    "import/extensions": ["warning", "never"],
   },
   "settings": {
     "import/resolver": {
@@ -31,7 +32,7 @@ module.exports = {
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       },
       "webpack": {
-        "config": "webpack.config.js"
+        "config": "webpack.base.config.js"
       }
     },
     "react": {
